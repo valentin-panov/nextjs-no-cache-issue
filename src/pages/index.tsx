@@ -7,6 +7,8 @@ type HomeProps = {
 export default function Home({ renderDate }: HomeProps) {
   return (
     <div>
+      <h1>getStaticProps</h1>
+      <p>props: {renderDate}</p>
       <p>I was rendered at <span>{new Date(renderDate).toLocaleTimeString()}</span></p>
     </div>
   );
