@@ -9,8 +9,8 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <div className="navbar">
-        <Link href="/">Home</Link>
-        <Link href="/ssr">Ssr</Link>
+        <Link href="/">HOME</Link>
+        <Link href="/ssr">SSR</Link>
       </div>
       {children}
     </>
