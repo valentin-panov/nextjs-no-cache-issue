@@ -2,11 +2,10 @@ import React, { ReactNode } from "react";
 import Link from "next/link";
 
 interface LayoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
-
   return (
     <>
       <div className="navbar">
@@ -15,5 +14,5 @@ export default function Layout({ children }: LayoutProps) {
       </div>
       {children}
     </>
-  )
+  );
 }
