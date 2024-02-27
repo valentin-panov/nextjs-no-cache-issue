@@ -6,6 +6,7 @@ type HomeProps = {
 export default function Home({ renderDate }: HomeProps) {
   return (
     <div>
+      <h1>HOME</h1>
       <p>getStaticProps: {renderDate}</p>
       <p>
         I was rendered at{" "}
