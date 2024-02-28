@@ -14,6 +14,14 @@ const nextConfig = {
             key: "x-custom-header",
             value: "my custom header value",
           },
+          {
+            key: "CDN-Cache-Control",
+            value: "max-age=60",
+          },
+          {
+            key: "Vercel-CDN-Cache-Control",
+            value: "max-age=3600",
+          },
         ],
       },
     ];
