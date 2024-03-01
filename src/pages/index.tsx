@@ -1,12 +1,9 @@
 import { GetStaticProps } from "next";
-import * as console from "console";
 
 type HomeProps = {
   renderDate: string;
-  context: GetStaticProps;
 };
-export default function Home({ renderDate, context }: HomeProps) {
-  console.log(context);
+export default function Home({ renderDate }: HomeProps) {
   return (
     <div>
       <h1>HOME (getStaticProps)</h1>
@@ -20,6 +17,6 @@ export default function Home({ renderDate, context }: HomeProps) {
 
 export async function getStaticProps(context: GetStaticProps) {
   return {
-    props: { renderDate: new Date().toISOString(), context },
+    props: { renderDate: new Date().toISOString() },
   };
 }
