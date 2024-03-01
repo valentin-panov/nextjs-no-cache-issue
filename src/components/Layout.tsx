@@ -9,12 +9,8 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <div className="navbar">
-        <Link href="/" rel={"prefetch"}>
-          HOME
-        </Link>
-        <Link href="/ssr" rel={"prefetch"}>
-          SSR
-        </Link>
+        <Link href="/">HOME</Link>
+        <Link href="/ssr">SSR</Link>
       </div>
       {children}
     </>

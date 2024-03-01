@@ -11,6 +11,7 @@ export default function Home({ renderDate }: HomeProps) {
         Page was rendered at{" "}
         <span>{new Date(renderDate).toLocaleTimeString()}</span>
       </p>
+      <link rel={"prefetch"} href={"/ssr"} />
     </div>
   );
 }

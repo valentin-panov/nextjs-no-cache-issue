@@ -9,6 +9,7 @@ export default function Index({ serverTime }: SsrProps) {
         Page was rendered at{" "}
         <span>{new Date(serverTime).toLocaleTimeString()}</span>
       </p>
+      <link rel={"prefetch"} href={"/"} />
     </div>
   );
 }
