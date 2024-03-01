@@ -44,6 +44,11 @@ in order to prevent accidental caching of responses that cannot be cached. If yo
 using getServerSideProps, use res.setHeader('Cache-Control', 'value_you_prefer') inside of the function as shown above.
 ```
 
-### The CVE-2023–46298 isn't reproducible, as it is showed below
+### OUTCOME
+
+The test stand is deployed here: [https://nextjs-no-cache-issue.vercel.app/](https://nextjs-no-cache-issue.vercel.app/)
+
+The CVE-2023–46298 isn't reproducible, as it
+is [expected to be](https://freedium.cfd/https://medium.com/@mares.viktor/deep-diving-into-cve-2023-46298-resource-exhaustion-in-next-js-7f4312d0cb3f)
 
 ![img.png](public/img.png)
