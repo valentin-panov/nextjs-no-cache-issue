@@ -4,10 +4,10 @@ type SsrProps = {
 export default function Index({ serverTime }: SsrProps) {
   return (
     <div>
-      <h1>SSR</h1>
-      <p>getServerSideProps: {serverTime}</p>
+      <h1>SSR (getServerSideProps)</h1>
       <p>
-        Server time <span>{new Date(serverTime).toLocaleTimeString()}</span>
+        Page was rendered at{" "}
+        <span>{new Date(serverTime).toLocaleTimeString()}</span>
       </p>
     </div>
   );
