@@ -20,7 +20,7 @@ const nextConfig = {
           },
           {
             key: "Vercel-CDN-Cache-Control",
-            value: "max-age=3600",
+            value: "max-age=90",
           },
         ],
       },
