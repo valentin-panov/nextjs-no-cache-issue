@@ -7,20 +7,16 @@ const nextConfig = {
         source: "/ssr",
         headers: [
           {
-            key: "Cache-Control",
-            value: "s-maxage=30, stale-while-revalidate=59",
-          },
-          {
             key: "x-custom-header",
-            value: "my custom header value",
+            value: "ASTeam",
           },
           {
             key: "CDN-Cache-Control",
-            value: "max-age=60",
+            value: "max-age=30",
           },
           {
             key: "Vercel-CDN-Cache-Control",
-            value: "max-age=90",
+            value: "max-age=30",
           },
         ],
       },
